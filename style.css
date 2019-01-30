@@ -1,0 +1,332 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding:0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+                                                /**navber scroll**/
+body{
+  margin:0;
+  padding:0;
+  height:1000px;
+}
+
+#logo-img img {
+    height: 66px;
+}
+.nav-link{
+	color: white!important;
+    font-weight: 500;
+}
+.nav-link:hover{
+	color:#20c997!important;
+}
+.navbar-light .navbar-toggler {
+    color: rgb(255, 255, 255)!important;
+    border-color: rgb(255, 255, 255)!important;
+}
+#main-nav ul li a {
+    color: white!important;
+    font-weight: 800;
+    font-family: arial-black;
+}
+nav.navbar.navbar-light.navbar-expand-md.fixed-top.bg-faded {
+    background-color: #80808024;
+}
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/photography-6.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: white;
+  background-color: #1e9c79;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 500;
+  border: 1px solid white;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+                       /**about section**/
+#about-section{
+	
+	/* color: green; */
+	background-color: #c5c3c4;
+	
+}
+#about-section .contain{
+	margin-top:50px;
+	color:black;
+}	
+#about-section .image-contant{
+	color:white;
+}                    /**SERVICE-BOX***/
+i.fas.fa-camera-retro {
+    color: #27a5b9;
+    font-size: 50px;
+    margin-bottom: 22px;
+}
+i.fas.fa-camera-retro:hover{
+	color:#fefefefe;
+}
+#our-service{
+	margin-top:50px;
+}
+#our-service .demo{
+	 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/keyboard-1.jpg");
+	 background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}						
+.demo{ background: #f6fcfd; }
+.serviceBox{
+    padding: 50px 35px;
+    background: #574d4c6e;
+    border: 1px solid #eee;
+    border-bottom-color: #428ef8;
+    text-align: center;
+    position: relative;
+    transition: all 0.5s ease 0s;
+}
+.serviceBox:hover{ border: 1px solid #428ef8; }
+.serviceBox:before,
+.serviceBox:after{
+    content: "";
+    width: 70%;
+    height: 5px;
+    background: #428ef8;
+    opacity: 0;
+    position: absolute;
+    top: -3px;
+    left: 35%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease 0s;
+}
+.serviceBox:hover:before,
+.serviceBox:hover:after{
+    opacity: 1;
+    left: 50%;
+}
+.serviceBox:after{
+    top: auto;
+    bottom: -3px;
+}
+.serviceBox .service-icon{
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    border-radius: 50%;
+    background: #1b9aae;
+    margin: 0 auto 20px;
+    font-size: 36px;
+    color: #fff;
+}
+.serviceBox .title{
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    transition: all 0.5s ease 0s;
+}
+.serviceBox:hover .title{ opacity: 0; }
+.serviceBox .description{
+    font-size: 14px;
+    color: #fdf7f7;
+    line-height: 25px;
+    margin: 0;
+    transition: all 0.5s ease 0s;
+    font-size: 17px;
+}
+.serviceBox:hover .description{
+    margin-top: -20px;
+    padding-bottom: 20px;
+}
+@media only screen and (max-width:990px){
+    .serviceBox{ margin-bottom: 30px; }
+}						
+                       /***portfolio**/
+#portfolio-section .content{
+	width:65%;
+}
+#portfolio-section{
+	margin-top:40px;
+	background-color:#b1b1b1;
+	
+}
+#portfolio-section .column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+#portfolio-section .column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+#portfolio-section .column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+#portfolio-section .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+#portfolio-section .container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+#portfolio-section .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+                                         /***Contact-Sections***/
+#contact-section{
+	margin-top:20px;
+}
+#contact-section h1{
+	text-align:center;
+	color:#1997ab;
+}										 
+#contact-section .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+#contact-section .title {
+  color: grey;
+  font-size: 18px;
+}
+
+ #contact-section button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+#contact-section a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+                                      /**profile-section**/
+.flip-card {
+  background-color: transparent;
+  width: 441px;
+  height: 365px;
+  perspective: 1000px;
+  margin-left: px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 101%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1.3s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  z-index: 2;
+}
+
+.flip-card-back {
+  background-color: #2cabbf;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+  
+}	
+.flip-card-back h1{
+	font-size:40px;
+	color:#ffffff;
+}								  
+.fab,.fas {
+    font-family: "Font Awesome 5 Brands";
+    font-size: 31px;
+    color: #ffffff;
+    margin-right: 16px;
+}
+.fab:hover{
+	color:#c53f3f;
+}
+.fas:hover{
+	color:#c53f3f;
+}
+#contact-section .title {
+    color: white;
+	font-size:40px;
+}
+                               /**footer**/
+#footer{
+	background-color:#869092;
+}						   
